@@ -27,6 +27,7 @@ function MyForm({ allEntries, setAllEntries }) {
         <input
           type="text"
           name="fullName"
+          placeholder="Your name"
           onChange={inputChange}
           value={userEntry.fullName}
         />
@@ -37,6 +38,7 @@ function MyForm({ allEntries, setAllEntries }) {
         <input
           type="text"
           name="phoneNum"
+          placeholder="Your number"
           onChange={inputChange}
           value={userEntry.phoneNum}
         />
