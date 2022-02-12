@@ -16,7 +16,7 @@ function Listele({ allEntries }) {
 
   return (
     <div>
-      <div>
+
         <input
           type="text"
           name="filterInput"
@@ -24,11 +24,11 @@ function Listele({ allEntries }) {
           value={filterText}
           onChange={filterOnChange}
         ></input>
-      </div>
+
       <ul>
         {filtered.map((item, index) => (
-          <li key={index}>
-            {item.fullName} {item.phoneNum}
+          <li key={index}><span>{item.fullName}</span><span>{item.phoneNum}</span>
+             
           </li>
         ))}
       </ul>
